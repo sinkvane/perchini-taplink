@@ -1,24 +1,6 @@
 {
   "cities": [
     {
-      "id": 1,
-      "name": "Москва",
-      "restaurants": [
-        {
-          "id": 101,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": [
-            {"ВК": "vk.com/perchini_russia"},
-            {"Instagram": "vk.com/perchini_russia"}
-          ],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
       "id": 2,
       "name": "Новосибирск",
       "restaurants": [
@@ -75,8 +57,26 @@
       ]
     },
     {
+      "id": 1,
+      "name": "Пенза",
+      "restaurants": [
+        {
+          "id": 101,
+          "name": "ТРЦ Prime Plaza",
+          "address": "ТРЦ Prime Plaza, 5 этаж",
+          "phone": "+7 495 123-45-67",
+          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+          "socialLinks": [
+            {"ВК": "vk.com/perchini_russia"},
+            {"Instagram": "vk.com/perchini_russia"}
+          ],
+          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+        }
+      ]
+    },
+    {
       "id": 3,
-      "name": "Белгород",
+      "name": "Казань",
       "restaurants": [
         {
           "id": 301,
@@ -91,7 +91,7 @@
     },
     {
       "id": 4,
-      "name": "Екатеринбург",
+      "name": "Москва",
       "restaurants": [
         {
           "id": 401,
@@ -106,7 +106,7 @@
     },
     {
       "id": 5,
-      "name": "Иркутск",
+      "name": "Самара",
       "restaurants": [
         {
           "id": 501,
@@ -121,7 +121,7 @@
     },
     {
       "id": 6,
-      "name": "Казань",
+      "name": "Тюмень",
       "restaurants": [
         {
           "id": 601,
@@ -136,7 +136,7 @@
     },
     {
       "id": 7,
-      "name": "Канск",
+      "name": "Воронеж",
       "restaurants": [
         {
           "id": 701,
@@ -256,7 +256,7 @@
     },
     {
       "id": 15,
-      "name": "Самара",
+      "name": "Иркутск",
       "restaurants": [
         {
           "id": 1501,
@@ -301,7 +301,7 @@
     },
     {
       "id": 18,
-      "name": "Тюмень",
+      "name": "Белгород",
       "restaurants": [
         {
           "id": 1801,
@@ -361,7 +361,7 @@
     },
     {
       "id": 22,
-      "name": "Астана",
+      "name": "Канск",
       "restaurants": [
         {
           "id": 2201,
@@ -391,7 +391,7 @@
     },
     {
       "id": 24,
-      "name": "Пенза",
+      "name": "Екатеринбург",
       "restaurants": [
         {
           "id": 2401,
@@ -406,7 +406,7 @@
     },
     {
       "id": 25,
-      "name": "Воронеж",
+      "name": "Астана",
       "restaurants": [
         {
           "id": 2501,

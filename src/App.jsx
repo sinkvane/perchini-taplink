@@ -8,7 +8,6 @@ import RestaurantPage from './pages/RestaurantPage';
 
 const App = () => (
   <Router>
-    <Header />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/city/:cityId" element={<CityPage />} />

@@ -3,7 +3,7 @@ import Logo from '../assets/img/perchini_logo.png';
 import styles from './Header.module.css';
 
 const Header = () => (
-	<header>
+	<header className={styles.header}>
 		<img className={styles.headerLogo} src={Logo} alt="Логотип Перчини" />
 	</header>
 );
