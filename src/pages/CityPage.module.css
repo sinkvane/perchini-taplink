@@ -1,0 +1,11 @@
+.cityPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cityPageInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

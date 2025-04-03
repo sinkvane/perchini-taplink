@@ -1,0 +1,17 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.homePageTitle {
+  font-size: 32px;
+}
+
+.homePageLink {
+  font-size: 24px;
+  border: 1px solid white;
+  display: block;
+  border-radius: 20px;
+  padding: 16px;
+}

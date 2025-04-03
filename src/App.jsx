@@ -1,30 +1,21 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import Novosibirsk from './pages/Novosibirsk';
-import Home from './pages/Home';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import CityPage from './pages/CityPage';
+import RestaurantPage from './pages/RestaurantPage';
 
-function App() {
-	return (
-		<>
-			<Router>
-				<nav>
-					<ul>
-						<li>
-							<Link to="/">Главная страница</Link>
-						</li>
-						<li>
-							<Link to="/Novosibirsk">Страница города</Link>
-						</li>
-					</ul>
-				</nav>
-
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/Novosibirsk" element={<Novosibirsk />} />
-				</Routes>
-			</Router>
-		</>
-	);
-}
+const App = () => (
+  <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/city/:cityId" element={<CityPage />} />
+      <Route path="/restaurant/:restaurantId" element={<RestaurantPage />} />
+    </Routes>
+    <Footer />
+  </Router>
+);
 
 export default App;

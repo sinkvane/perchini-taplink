@@ -1,0 +1,43 @@
+.restaurantPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurantPageTitle {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.restaurantPageAddress {
+  font-size: 16px;
+  color: white;
+}
+
+.restaurantPagePhone {
+  font-size: 16px;
+  color: white;
+}
+
+.restaurantPagePhoneLink {
+  font-size: 16px;
+  color: white;
+}
+
+.restaurantPageMenuLink {
+  font-size: 16px;
+  color: white;
+}
+
+.restaurantPageSchedule {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurantPageSocials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
