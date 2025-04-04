@@ -1,8 +1,15 @@
 .header {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.headerText {
+	font-size: calc(var(--fontSizeText) - 2px);
 }
 
 .headerLogo {
-  width: 55%;
+	width: 55%;
 }

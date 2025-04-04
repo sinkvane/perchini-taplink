@@ -1,43 +1,94 @@
+@import '../variables.css';
+
 .restaurantPageContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: var(--paddingSecondary);
 }
 
 .restaurantPageTitle {
-  font-size: 28px;
-  color: white;
-  margin-bottom: 16px;
+	font-size: 28px;
+	color: var(--white-color);
+	margin-bottom: 16px;
+}
+
+.restaurantPageLinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border: var(--border2pxSolidBlack);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
+}
+
+.restaurantPageSpecialtyLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border: var(--border2pxSolidBlack);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
+}
+
+.restaurantPageLinkIcon {
+	fill: var(--black-color);
+	width: 16px;
+	height: auto;
 }
 
 .restaurantPageAddress {
-  font-size: 16px;
-  color: white;
+	font-size: var(--fontSizeText);
+	color: var(--white-color);
 }
 
 .restaurantPagePhone {
-  font-size: 16px;
-  color: white;
+	font-size: var(--fontSizeText);
+	color: var(--white-color);
 }
 
 .restaurantPagePhoneLink {
-  font-size: 16px;
-  color: white;
+	font-size: var(--fontSizeText);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border: var(--border2pxSolidBlack);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
+	font-size: var(--fontSizeText);
+	color: var(--white-color);
+}
+
+.restaurantPageSocialLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border: var(--border2pxSolidBlack);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
 }
 
 .restaurantPageMenuLink {
-  font-size: 16px;
-  color: white;
+	font-size: var(--fontSizeText);
+	color: var(--white-color);
 }
 
 .restaurantPageSchedule {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .restaurantPageSocials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }

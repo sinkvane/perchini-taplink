@@ -1,39 +1,21 @@
+@import './variables.css';
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: white;
+	color: var(--white-color);
 	line-height: 1.4;
 }
 
 body {
-	padding: 12px;
 	width: 100%;
 	height: 100vh;
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	background-color: #e95b07;
-	/* background-image: url('./assets/img/background.jpg'); */
+	font-family: var(--fontFamilyText);
+	background-color: var(--primary-color);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-@supports (background-image: url('image.avif')) {
-	body {
-		/* background-image: url('./assets/img/background.avif'); */
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-}
-
-@supports ((background-image: url('image.webp')) and (not (background-image: url('image.avif')))) {
-	body {
-		/* background-image: url('./assets/img/background.webp'); */
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
 }
 
 @font-face {
@@ -67,21 +49,4 @@ li {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	/* position: relative;
-	z-index: 0; */
-	padding: 20px;
 }
-
-/* #root::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	backdrop-filter: blur(6px);
-	background: rgba(134, 134, 134, 0.5);
-	z-index: -1;
-	border-radius: 20px;
-	border: 2px solid white;
-} */

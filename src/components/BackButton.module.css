@@ -1,8 +1,10 @@
+@import '../variables.css';
+
 .backButton {
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 12px;
-  border: none;
-  background-color: black;
-  width: 100%;
+	font-size: var(--fontSizeText);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	border: none;
+	background-color: var(--black-color);
+	width: auto;
 }

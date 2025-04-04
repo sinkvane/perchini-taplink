@@ -1,427 +1,544 @@
 {
-  "cities": [
-    {
-      "id": 2,
-      "name": "Новосибирск",
-      "restaurants": [
-        {
-          "id": 201,
-          "name": "Перчини в ТРЦ «Аура»",
-          "address": "ул. Военная, 5, ТРЦ «АУРА», 4 этаж",
-          "phone": "8-962-828-33-48",
-          "menuUrl": "https://example.com/menu3",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вт-Сб: 12:00–01:00, Вс: выходной",
-          "buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
-        },
-        {
-          "id": 202,
-          "name": "Перчини в ТЦ «Эдем»",
-          "address": "Кутателадзе, 4/4, ТРК «Эдем», 4 этаж",
-          "phone": "8-962-828-69-69",
-          "menuUrl": "https://example.com/menu4",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 11:00–22:00, Пт-Сб: 10:00–23:00",
-          "buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
-        },
-        {
-          "id": 203,
-          "name": "Перчини в ТРЦ «Ройял Парк»",
-          "address": "ул. Советская, д. 30",
-          "phone": "+7 383 654-32-10",
-          "menuUrl": "https://example.com/menu4",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Пн-Пт: 08:00–21:00, Сб-Вс: 10:00–23:00",
-          "buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
-        },
-        {
-          "id": 204,
-          "name": "Перчини в МФК «Сан Сити»",
-          "address": "ул. Советская, д. 30",
-          "phone": "+7 383 654-32-10",
-          "menuUrl": "https://example.com/menu4",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Пн-Пт: 08:00–21:00, Сб-Вс: 10:00–23:00",
-          "buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
-        },
-        {
-          "id": 205,
-          "name": "Перчини в ТРЦ «Галерея»",
-          "address": "ул. Советская, д. 30",
-          "phone": "+7 383 654-32-10",
-          "menuUrl": "https://example.com/menu4",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Пн-Пт: 08:00–21:00, Сб-Вс: 10:00–23:00",
-          "buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Пенза",
-      "restaurants": [
-        {
-          "id": 101,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": [
-            {"ВК": "vk.com/perchini_russia"},
-            {"Instagram": "vk.com/perchini_russia"}
-          ],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Казань",
-      "restaurants": [
-        {
-          "id": 301,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Москва",
-      "restaurants": [
-        {
-          "id": 401,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Самара",
-      "restaurants": [
-        {
-          "id": 501,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Тюмень",
-      "restaurants": [
-        {
-          "id": 601,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Воронеж",
-      "restaurants": [
-        {
-          "id": 701,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Красноярск",
-      "restaurants": [
-        {
-          "id": 801,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Набережные Челны",
-      "restaurants": [
-        {
-          "id": 901,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Нижневартовск",
-      "restaurants": [
-        {
-          "id": 1001,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Нижнекамск",
-      "restaurants": [
-        {
-          "id": 1101,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Новый Уренгой",
-      "restaurants": [
-        {
-          "id": 1201,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Ноябрьск",
-      "restaurants": [
-        {
-          "id": 1301,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Пермь",
-      "restaurants": [
-        {
-          "id": 1401,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Иркутск",
-      "restaurants": [
-        {
-          "id": 1501,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Сургут",
-      "restaurants": [
-        {
-          "id": 1601,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Томск",
-      "restaurants": [
-        {
-          "id": 1701,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Белгород",
-      "restaurants": [
-        {
-          "id": 1801,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Сочи",
-      "restaurants": [
-        {
-          "id": 1901,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Ульяновск",
-      "restaurants": [
-        {
-          "id": 2001,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Уфа",
-      "restaurants": [
-        {
-          "id": 2101,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Канск",
-      "restaurants": [
-        {
-          "id": 2201,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "name": "Барнаул",
-      "restaurants": [
-        {
-          "id": 2301,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Екатеринбург",
-      "restaurants": [
-        {
-          "id": 2401,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "name": "Астана",
-      "restaurants": [
-        {
-          "id": 2501,
-          "name": "ТРЦ Prime Plaza",
-          "address": "ТРЦ Prime Plaza, 5 этаж",
-          "phone": "+7 495 123-45-67",
-          "menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
-          "socialLinks": ["vk.com/perchini_russia"],
-          "openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
-        }
-      ]
-    }
-  ],
-  "socialNetworks": {
-    "VK": "https://vk.com/",
-    "Instagram": "https://www.instagram.com/"
-  }
+	"cities": [
+		{
+			"id": 2,
+			"name": "Новосибирск",
+			"restaurants": [
+				{
+					"id": 201,
+					"name": "Перчини в ТРЦ «Аура»",
+					"address": "ул. Военная, 5, ТРЦ «АУРА», 4 этаж",
+					"phones": ["8-962-828-33-48"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=7&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=7&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-ВС: 10:00–01:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
+				},
+				{
+					"id": 202,
+					"name": "Перчини в ТЦ «Эдем»",
+					"address": "Кутателадзе, 4/4, ТРК «Эдем», 4 этаж",
+					"phones": ["8-962-828-69-69"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=10&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=10&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 11:00–22:00, Пт-Сб: 10:00–23:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
+				},
+				{
+					"id": 203,
+					"name": "Перчини в ТРЦ «Ройял Парк»",
+					"address": "ул. Красный проспект, 101, ТРЦ «Ройял-Парк», 3 этаж",
+					"phones": ["+7 (383) 248‒67‒67", "+7‒962‒828‒67‒67"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=8&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=8&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–23:00, Пт-Сб: 10:00–00:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
+				},
+				{
+					"id": 204,
+					"name": "Перчини в МФК «Сан Сити»",
+					"address": "пл. К. Маркса, 7, ТРЦ «Сан-Сити», 3 этаж",
+					"phones": ["+7 (903) 90 20 839"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=55&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=55&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–23:00, Пт-Сб: 10:00–00:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
+				},
+				{
+					"id": 205,
+					"name": "Перчини в ТРЦ «Галерея»",
+					"address": "ул. Гоголя, 13, 3 этаж",
+					"phones": ["+7 (383) 248‒68‒38", "+7‒962‒828‒68‒38"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=56&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Пн-Вс: 10:00–22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 15:00"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Пенза",
+			"restaurants": [
+				{
+					"id": 101,
+					"name": "Перчини в Пензе",
+					"address": "ТРК «Коллаж», пр Строителей 1В",
+					"phones": ["+7 (412) 39 88 08", "+7 (937) 413 88 08"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=60&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Пн-Вс: 10:00–22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Казань",
+			"restaurants": [
+				{
+					"id": 301,
+					"name": "Перчини в Казани",
+					"address": "пр-т. Победы, 91, ТЦ «Южный», 2 этаж",
+					"phones": ["+7-987-215-66-11", "8 (843) 215-66-11"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=92&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=92&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Пн-Вс: 10:00–22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Москва",
+			"restaurants": [
+				{
+					"id": 401,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (910) 745-40-70"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=60&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–23:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Самара",
+			"restaurants": [
+				{
+					"id": 501,
+					"name": "Перчини на Дачной",
+					"address": "ул. Дачная, 2",
+					"phones": ["+7 (846) 202 44 40"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=40&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=40&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 11:00–00:00, Пт-Сб: 11:00–02:00"
+				},
+				{
+					"id": 502,
+					"name": "Перчини в ТРК «Космопорт»",
+					"address": "ул. Дыбенко, 30 (ТРК «Космопорт», 2 этаж)",
+					"phones": ["+7 (846) 231 22 20"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=41&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=41&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Пн-Вс: 10:00–23:00"
+				},
+				{
+					"id": 503,
+					"name": "Перчини на Московском шоссе",
+					"address": "ул. Московское шоссе, 252",
+					"phones": ["+7 (846) 203 20 02"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=42&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=42&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 11:00–00:00, Пт-Сб: 11:00–02:00"
+				},
+				{
+					"id": 504,
+					"name": "Перчини на Набережной",
+					"address": "Волжский проспект, 12",
+					"phones": ["+7 (846) 203 22 03"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=43&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=43&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН 12:00 – 00:00, ВТ-ЧТ 09:00 – 00:00, ПТ 09:00 – 02:00, СБ 10:00 – 02:00, ВС 10:00 – 00:00"
+				},
+				{
+					"id": 505,
+					"name": "Перчини в ТРК «LETOUT»",
+					"address": "ТРК «LETOUT»: Московское шоссе, 18 километр, 25А",
+					"phones": ["8 (846) 202 32 32"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=79&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=79&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ с 10:00-23:00, ПТ-СБ с 10:00-00:00"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "Тюмень",
+			"restaurants": [
+				{
+					"id": 601,
+					"name": "Перчини в ТРЦ «Галерея вояж»",
+					"address": "ул. Герцена, 94, ТРЦ «Галерея вояж», 3 этаж",
+					"phones": ["8 (3452) 58-13-97"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=47&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=47&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-ВС 10:00 – 22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 11:00 до 16:00"
+				},
+				{
+					"id": 602,
+					"name": "Перчини в ТРЦ «Кристалл»",
+					"address": "ул. Менделеева, 1а, ТРЦ «Кристалл»",
+					"phones": ["+7 (3452) 44 16 93"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=48&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=48&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-ВС 10:00 – 22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 10:00 до 16:00"
+				},
+				{
+					"id": 603,
+					"name": "Перчини в Тюмени",
+					"address": "Ул. Республики, дом 143а",
+					"phones": ["8-991-896-33-73"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=77&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=77&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-ЧТ 11:00-23:00, ПТ 11:00-00:00, СБ 11:00-00:00, ВС 11:00-23:00"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "Воронеж",
+			"restaurants": [
+				{
+					"id": 701,
+					"name": "Перчини в Воронеже",
+					"address": "Фридриха Энгельса, 52",
+					"phones": ["+7 (473) 230 04 44", "+7 (900) 930 04 44"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=75&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=75&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 11:00 — 22:00, ПТ-СБ 11:00 — 23:00"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "Красноярск",
+			"restaurants": [
+				{
+					"id": 801,
+					"name": "Перчини в Красноярске в ТРЦ «Планета» 2 этаж",
+					"address": "Ул. 9-го Мая, 77. ТРЦ «Планета», 2 этаж",
+					"phones": ["+7 967 612 48 28"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=82&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=82&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "с 10:00-23:00 ЕЖЕДНЕВНО"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "Набережные Челны",
+			"restaurants": [
+				{
+					"id": 901,
+					"name": "ТК «Торговый Квартал»",
+					"address": "ул. Мира, ТК «Торговый Квартал», 3 этаж",
+					"phones": ["+7‒917‒225‒30‒00"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=73&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=73&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 09:00 — 23:00, ПТ-СБ 09:00 — 00:00"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "Нижневартовск",
+			"restaurants": [
+				{
+					"id": 1001,
+					"name": "Перчини в ТЦ «Европа Сити»",
+					"address": "ул.Чапаева, 27, 4 этаж",
+					"phones": ["+7‒982‒184‒78‒75"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=36&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=36&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 10:00 — 22:00 ПТ-СБ 10:00 — 23:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 10:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "Нижнекамск",
+			"restaurants": [
+				{
+					"id": 1101,
+					"name": "Перчини в Нижнекамске",
+					"address": "Проспект мира, 38б",
+					"phones": ["8-(855)-545-57-77"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=37&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=37&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-ВС 10:00 – 24:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 10:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "Новый Уренгой",
+			"restaurants": [
+				{
+					"id": 1201,
+					"name": "Перчини в ТРЦ «Солнечный»",
+					"address": "ул. Сибирская, 26, ТРЦ «Солнечный», 3 этаж",
+					"phones": ["8(912)-912-91-81"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=38&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=38&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 11:00 - 22:00, ПТ-СБ 11:00 - 23:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 11:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "Ноябрьск",
+			"restaurants": [
+				{
+					"id": 1301,
+					"name": "Перчини в Ноябрьске",
+					"address": "ул. Советская, 92, 2 этаж",
+					"phones": ["8 (349) 639-25-39"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=39&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=39&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 12:00 - 23:00, ПТ-СБ 12:00 - 24:00"
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "Пермь",
+			"restaurants": [
+				{
+					"id": 1401,
+					"name": "Ленина, 68",
+					"address": "Ленина, 68",
+					"phones": ["+7 912 06 10 355"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=68&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=68&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 11:00 — 23:00, ПТ-СБ 11:00 — 00:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 16:00"
+				},
+				{
+					"id": 1402,
+					"name": "ТРК «Семья», ул. Революции, 13",
+					"address": "ТРК «Семья», ул. Революции, 13, корпус 2, 3 этаж",
+					"phones": ["+7 342 270-04-40"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=78&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=78&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Ежедневно 10:00-22:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 12:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "Иркутск",
+			"restaurants": [
+				{
+					"id": 1501,
+					"name": "Перчини в ТРК «Яркомолл»",
+					"address": "ул. Верхня набережная 10, ТРЦ «Яркомолл», 3 этаж",
+					"phones": ["8 (3952) 500 550"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=12&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=12&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-СР 10:00 - 22:00, ЧТ-ВС 10:00 - 23:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 10:00 до 16:00"
+				},
+				{
+					"id": 1502,
+					"name": "Перчини в МТЦ «Новый»",
+					"address": "ул. Советская, 58/1, МТЦ «Новый», 3 этаж",
+					"phones": ["8 (3952) 500-290"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=13&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=13&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ПН-СР 10:00 — 22.00, ЧТ-ВС 10:00 — 23:00",
+					"buisnessLunch": "Бизнес-ланч по будням с 10:00 до 16:00"
+				}
+			]
+		},
+		{
+			"id": 16,
+			"name": "Сургут",
+			"restaurants": [
+				{
+					"id": 1601,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 17,
+			"name": "Томск",
+			"restaurants": [
+				{
+					"id": 1701,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 18,
+			"name": "Белгород",
+			"restaurants": [
+				{
+					"id": 1801,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 19,
+			"name": "Сочи",
+			"restaurants": [
+				{
+					"id": 1901,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "Ульяновск",
+			"restaurants": [
+				{
+					"id": 2001,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 21,
+			"name": "Уфа",
+			"restaurants": [
+				{
+					"id": 2101,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 22,
+			"name": "Канск",
+			"restaurants": [
+				{
+					"id": 2201,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "Барнаул",
+			"restaurants": [
+				{
+					"id": 2301,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 24,
+			"name": "Екатеринбург",
+			"restaurants": [
+				{
+					"id": 2401,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		},
+		{
+			"id": 25,
+			"name": "Астана",
+			"restaurants": [
+				{
+					"id": 2501,
+					"name": "ТРЦ Prime Plaza",
+					"address": "ТРЦ Prime Plaza, 5 этаж",
+					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=60&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=56&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "Вс-Чт: 10:00–22:00, Пт-Сб: 10:00–23:00"
+				}
+			]
+		}
+	],
+	"socialNetworks": {
+		"VK": "https://vk.com/",
+		"Instagram": "https://www.instagram.com/"
+	}
 }

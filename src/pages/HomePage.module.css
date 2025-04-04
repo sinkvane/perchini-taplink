@@ -1,40 +1,65 @@
-.homePageContainer {
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-}
+@import '../variables.css';
 
 .homePagePhotoContainer {
 	position: relative;
 	z-index: 0;
+	margin-top: -50px;
+	height: 500px;
+	width: auto;
 }
 
-.homePagePhoto {
-	margin-left: -50px;
-	margin-right: -50px;
-	margin-top: -250px;
+.homePagePhotoContainer > img {
+	position: absolute;
+	z-index: 3;
+	width: 50%;
+	height: auto;
+	bottom: 0;
+	left: 32px;
 }
 
 .homePagePhotoContainer::before {
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	background-image: url('../assets/img/perchini_mini_text.png');
-  background-repeat: no-repeat;
-	background-size: 50%;
-  background-position: bottom;
+	height: 99%;
+	background-image: url('../assets/img/perchiniPhoto.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
 	z-index: 1;
 }
 
+.homePagePhotoContainer::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to bottom,
+		transparent 40%,
+		rgba(233, 91, 7, 1) 95%
+	); /* Цвет градиента можно заменить на любой другой */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.homePageContent {
+	padding: var(--paddingMain);
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
 .homePageTitle {
-	font-size: 32px;
-	font-family: 'BebasNeue', sans-serif;
-	letter-spacing: 2px;
+	text-align: center;
+	font-size: var(--fontSizeTitle);
+	font-family: var(--fontFamilyTitle);
+	letter-spacing: var(--letterSpacingTitle);
 }
 
 .homePageLink {
-	border: 1px solid white;
+	border: var(--border2pxSolidWhite);
 	display: block;
 	border-radius: 20px;
 	padding: 16px;

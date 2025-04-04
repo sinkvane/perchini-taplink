@@ -1,7 +1,11 @@
+@import '../variables.css';
+
 .footerContainer {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: var(--paddingMain);
+  padding-bottom: 20px;
 }
 
 .footerNav {
@@ -14,5 +18,4 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  
 }

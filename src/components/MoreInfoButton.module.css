@@ -1,8 +1,12 @@
+@import '../variables.css';
+
 .moreInfoButton {
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 12px;
-  border: none;
-  background-color: black;
-  width: 100%;
+	font-family: var(--fontFamilyText);
+	font-size: var(--fontSizeText);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	color: var(--white-color);
+	background-color: transparent;
+	border: var(--border2pxSolidBlack);
+	width: 100%;
 }

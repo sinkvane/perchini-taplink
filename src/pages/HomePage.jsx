@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import data from '../data/restaurants.json';
 import styles from './HomePage.module.css';
-import perchiniPhoto from '../assets/img/perchiniPhoto.jpg';
+import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
 const HomePage = () => {
@@ -17,12 +17,14 @@ const HomePage = () => {
 	return (
 		<div className={styles.homePageContainer}>
 			<div className={styles.homePagePhotoContainer}>
-				<img className={styles.homePagePhoto} src={perchiniPhoto} alt="Перчини фото" />
+				<img src={perchiniMiniText} alt="В перчини есть!" />
 			</div>
-			<Header />
-			<h1 className={styles.homePageTitle}>Добро пожаловать в Перчини</h1>
-			<p>Выберите город:</p>
-			{cities}
+			<div className={styles.homePageContent}>
+				<Header />
+				<h1 className={styles.homePageTitle}>Добро пожаловать в Перчини</h1>
+				<p>Выберите город:</p>
+				{cities}
+			</div>
 		</div>
 	);
 };

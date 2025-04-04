@@ -1,11 +1,38 @@
+@import '../variables.css';
+
 .cityPageContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: var(--paddingSecondary);
+}
+
+.cityPageHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cityPageTitle {
+	text-align: center;
+	font-size: var(--fontSizeTitle);
+	font-family: var(--fontFamilyTitle);
+	letter-spacing: var(--letterSpacingTitle);
 }
 
 .cityPageInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cityPagePhoneLink {
+	font-size: var(--fontSizeText);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border: var(--border2pxSolidBlack);
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
 }
