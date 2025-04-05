@@ -22,7 +22,7 @@ const HomePage = () => {
 			<div className={styles.homePageContent}>
 				<Header />
 				{/* <h1 className={styles.homePageTitle}>Добро пожаловать в Перчини</h1> */}
-				<h2 className={styles.homePageText}>Выберите город:</h2>
+				<h2 className={styles.homePageText}>Выберите город</h2>
 				{cities}
 			</div>
 		</div>

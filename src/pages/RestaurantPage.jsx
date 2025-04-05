@@ -4,6 +4,7 @@ import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
 import styles from './RestaurantPage.module.css';
 import LinkIcon from '../components/LinkIcon';
+import PhoneIcon from '../components/PhoneIcon';
 
 const RestaurantPage = () => {
 	const { restaurantId } = useParams();
@@ -20,7 +21,9 @@ const RestaurantPage = () => {
 				<p>{label}</p>
 				{phones.map((phone) => (
 					<p key={phone}>
-						<a href={`tel:${phone}`}>{phone}</a>
+						<a className={styles.restaurantPagePhoneLink} href={`tel:${phone}`}>{phone}
+						<PhoneIcon className={styles.restaurantPageIcon} />
+						</a>
 					</p>
 				))}
 			</>
@@ -40,7 +43,7 @@ const RestaurantPage = () => {
 					rel="noopener noreferrer"
 				>
 					Блюдо месяца
-					<LinkIcon className={styles.restaurantPageLinkIcon} />
+					<LinkIcon className={styles.restaurantPageIcon} />
 				</a>
 			</p>
 			<p>
@@ -51,7 +54,7 @@ const RestaurantPage = () => {
 					rel="noopener noreferrer"
 				>
 					Посмотреть меню
-					<LinkIcon className={styles.restaurantPageLinkIcon} />
+					<LinkIcon className={styles.restaurantPageIcon} />
 				</a>
 			</p>
 			<div className={styles.restaurantPageSchedule}>
