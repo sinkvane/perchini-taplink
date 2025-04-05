@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Footer.module.css';
@@ -5,8 +6,11 @@ import styles from './Footer.module.css';
 const Footer = () => {
   const location = useLocation();
   
-  // Логика выбора класса в зависимости от маршрута
   let footerClass = location.pathname === '/' ? styles.footerSocialLinks : styles.footerSocialLinksOther;
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
 
   return (
     <footer className={styles.footerContainer}>

@@ -110,6 +110,10 @@
 	gap: 20px;
 }
 
+.restaurantPageOpenHours {
+	text-transform: uppercase;
+}
+
 .restaurantPageSocials {
 	display: flex;
 	flex-direction: column;

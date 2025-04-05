@@ -56,7 +56,7 @@ const RestaurantPage = () => {
 			</p>
 			<div className={styles.restaurantPageSchedule}>
 				<p>График работы:</p>
-				<p>{restaurantData.openHours}</p>
+				<p className={styles.restaurantPageOpenHours}>{restaurantData.openHours}</p>
 			</div>
 			<p>{restaurantData.buisnessLunch ? restaurantData.buisnessLunch : null}</p>
 			<BackButton />
