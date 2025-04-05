@@ -11,9 +11,9 @@
 .homePagePhotoContainer > img {
 	position: absolute;
 	z-index: 3;
-	width: 50%;
+	width: 55%;
 	height: auto;
-	bottom: 0;
+	bottom: 10px;
 	left: 32px;
 }
 
@@ -58,13 +58,28 @@
 	letter-spacing: var(--letterSpacingTitle);
 }
 
+.homePageText {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: calc(var(--fontSizeTitle) + 16px);
+	font-family: var(--fontFamilyTitle);
+	letter-spacing: 2px;
+	letter-spacing: var(--letterSpacingTitle);
+	margin-top: 50px;
+}
+
 .homePageLink {
 	border: var(--border2pxSolidWhite);
 	display: block;
 	border-radius: 20px;
 	padding: 16px;
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-family: 'BebasNeue', sans-serif;
 	text-align: center;
+	background-color: var(--white-color);
+}
+
+.homePageLink > span {
+	font-size: var(--fontSizeTitle);
+	font-family: var(--fontFamilyTitle);
+	letter-spacing: var(--letterSpacingTitle);
+	color: var(--primary-color)
 }

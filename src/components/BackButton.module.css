@@ -5,6 +5,6 @@
 	padding: var(--paddingElements);
 	border-radius: var(--borderRadiusElements);
 	border: none;
-	background-color: var(--black-color);
+	background-color: var(--primary-color);
 	width: auto;
 }

@@ -9,7 +9,7 @@ const HomePage = () => {
 	const cities = data.cities.map((city) => (
 		<div key={city.id}>
 			<Link className={styles.homePageLink} to={`/city/${city.id}`}>
-				<h2>{city.name}</h2>
+				<span>{city.name}</span>
 			</Link>
 		</div>
 	));
@@ -21,8 +21,8 @@ const HomePage = () => {
 			</div>
 			<div className={styles.homePageContent}>
 				<Header />
-				<h1 className={styles.homePageTitle}>Добро пожаловать в Перчини</h1>
-				<p>Выберите город:</p>
+				{/* <h1 className={styles.homePageTitle}>Добро пожаловать в Перчини</h1> */}
+				<h2 className={styles.homePageText}>Выберите город:</h2>
 				{cities}
 			</div>
 		</div>

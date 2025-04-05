@@ -8,6 +8,10 @@
   padding-bottom: 20px;
 }
 
+.footerContainerOther {
+  flex-direction: column;
+}
+
 .footerNav {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,13 @@
 
 .footerSocialLinks {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 40px;
+}
+
+.footerSocialLinksOther {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 }
