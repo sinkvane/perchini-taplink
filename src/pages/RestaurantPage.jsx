@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
 import styles from './RestaurantPage.module.css';
-import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
 
 const RestaurantPage = () => {
@@ -35,33 +34,6 @@ const RestaurantPage = () => {
 			<h1 className={styles.restaurantPageTitle}>{restaurantData.name}</h1>
 			<p className={styles.restaurantPageAddress}>Адрес: {restaurantData.address}</p>
 			{renderPhones(restaurantData.phones)}
-			<p>
-				<a
-					className={styles.restaurantPageSpecialtyLink}
-					href={restaurantData.specialtyUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Блюдо месяца
-					<LinkIcon className={styles.restaurantPageIcon} />
-				</a>
-			</p>
-			<p>
-				<a
-					className={styles.restaurantPageLinks}
-					href={restaurantData.menuUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Посмотреть меню
-					<LinkIcon className={styles.restaurantPageIcon} />
-				</a>
-			</p>
-			<div className={styles.restaurantPageSchedule}>
-				<p>График работы:</p>
-				<p className={styles.restaurantPageOpenHours}>{restaurantData.openHours}</p>
-			</div>
-			<p>{restaurantData.buisnessLunch ? restaurantData.buisnessLunch : null}</p>
 			<BackButton />
 			{/* <p>Социальные сети:</p>
 			<ul className={styles.restaurantPageSocials}>

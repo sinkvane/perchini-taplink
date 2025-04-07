@@ -4,6 +4,8 @@ import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
 import MoreInfoButton from '../components/MoreInfoButton'; // Импортируем новый компонент
 import styles from './CityPage.module.css';
+import LinkIcon from '../components/LinkIcon';
+import PhoneIcon from '../components/PhoneIcon';
 
 const CityPage = () => {
 	const { cityId } = useParams();
@@ -20,6 +22,7 @@ const CityPage = () => {
 					<p key={phone}>
 						<a className={styles.cityPagePhoneLink} href={`tel:${phone}`}>
 							{phone}
+							<PhoneIcon className={styles.cityPageIcon} />
 						</a>
 					</p>
 				))}
@@ -29,10 +32,36 @@ const CityPage = () => {
 
 	const restaurants = cityData.restaurants.map((restaurant) => (
 		<div className={styles.cityPageInfo} key={restaurant.id}>
-			<h3>{restaurant.name}</h3>
+			<h3 className={styles.cityPageRestaurantTitle}>{restaurant.name}</h3>
 			<p>Адрес: {restaurant.address}</p>
 			{renderPhones(restaurant.phones)}
-			<MoreInfoButton id={restaurant.id} />
+			<p>
+				<a
+					className={styles.cityPageLinks}
+					href={restaurant.specialtyUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Блюдо месяца
+					<LinkIcon className={styles.cityPageIcon} />
+				</a>
+			</p>
+			<p>
+				<a
+					className={styles.cityPageLinks}
+					href={restaurant.menuUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Посмотреть меню
+					<LinkIcon className={styles.cityPageIcon} />
+				</a>
+			</p>
+			<div className={styles.cityPageSchedule}>
+				<p>График работы:</p>
+				<p className={styles.cityPageOpenHours}>{restaurant.openHours}</p>
+			</div>
+			<p>{restaurant.buisnessLunch ? restaurant.buisnessLunch : null}</p>
 		</div>
 	));
 

@@ -18,11 +18,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100px;
-	background: linear-gradient(
-		to bottom,
-		transparent 1%,
-		rgba(233, 91, 7, 1) 70%
-	);
+	background: linear-gradient(to bottom, transparent 1%, rgba(233, 91, 7, 1) 70%);
 	left: 0;
 	bottom: -1px;
 	background-size: 100%;
@@ -44,10 +40,19 @@
 	letter-spacing: var(--letterSpacingTitle);
 }
 
+.cityPageRestaurantTitle {
+	font-family: var(--fontFamilyTitle);
+	font-size: var(--fontSizeTitle);
+	letter-spacing: var(--letterSpacingTitle);
+}
+
 .cityPageInfo {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	/* border: var(--border2pxSolidWhite);
+	border-radius: var(--borderRadiusElements);
+	padding: var(--paddingElements); */
 }
 
 .cityPagePhoneLink {
@@ -61,4 +66,31 @@
 	border-radius: var(--borderRadiusElements);
 	text-align: center;
 	background-color: var(--primary-color);
+}
+
+.cityPageIcon {
+	fill: var(--white-color);
+	width: 16px;
+	height: auto;
+}
+
+.cityPageLinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: var(--paddingElements);
+	border-radius: var(--borderRadiusElements);
+	text-align: center;
+	background-color: var(--primary-color);
+}
+
+.cityPageSchedule {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.cityPageOpenHours {
+	text-transform: uppercase;
 }
