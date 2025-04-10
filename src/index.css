@@ -9,6 +9,8 @@
 }
 
 body {
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	font-family: var(--fontFamilyText);
@@ -16,6 +18,13 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+#root {
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 @font-face {
@@ -43,10 +52,4 @@ a {
 
 li {
 	list-style: none;
-}
-
-#root {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
 }

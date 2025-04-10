@@ -8,6 +8,18 @@
 	width: auto;
 }
 
+@media screen and (min-width: 601px) {
+	.homePagePhotoContainer {
+			height: 700px;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .homePagePhotoContainer {
+		height: 650px;
+  }
+}
+
 .homePagePhotoContainer > img {
 	position: absolute;
 	z-index: 3;

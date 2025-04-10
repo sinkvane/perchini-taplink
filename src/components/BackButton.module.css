@@ -4,7 +4,9 @@
 	font-size: var(--fontSizeText);
 	padding: var(--paddingElements);
 	border-radius: var(--borderRadiusElements);
-	border: none;
-	background-color: var(--primary-color);
+	/* border: none; */
+	border: 2px solid var(--primary-color);
+	background-color: var(--white-color);
+	color: var(--primary-color);
 	width: auto;
 }
