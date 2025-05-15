@@ -4,6 +4,7 @@ import BackButton from '../components/BackButton';
 import styles from './CityPage.module.css';
 import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
+import YandexEdaLink from '../components/yandexEdaLink';
 
 const CityPage = () => {
 	const { cityId } = useParams();
@@ -29,16 +30,6 @@ const CityPage = () => {
 
 	const restaurants = cityData.restaurants.map((restaurant) => (
 		<div className={styles.cityPageInfo} key={restaurant.id}>
-			{cityData.yandexEda && (
-						<a
-				className={styles.cityPageLinks}
-				href={cityData.yandexEda}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Доставка в городе {cityData.name}
-			</a>
-			)}
 			<h3 className={styles.cityPageRestaurantTitle}>{restaurant.name}</h3>
 			<p>Адрес: {restaurant.address}</p>
 			{renderPhones(restaurant.phones)}
@@ -78,6 +69,7 @@ const CityPage = () => {
 				<h1 className={styles.cityPageTitle}>{cityData.name}</h1>
 				<BackButton />
 			</div>
+			<YandexEdaLink />
 			{restaurants}
 		</div>
 	);
