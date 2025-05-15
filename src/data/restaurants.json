@@ -3,6 +3,7 @@
 		{
 			"id": 2,
 			"name": "Новосибирск",
+			"yandexEda": "https://eda.yandex.ru/novosibirsk/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 201,
@@ -64,6 +65,7 @@
 		{
 			"id": 1,
 			"name": "Пенза",
+			"yandexEda": "https://market-delivery.yandex.ru/penza/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 101,
@@ -98,6 +100,7 @@
 		{
 			"id": 4,
 			"name": "Москва",
+			"yandexEda": "https://eda.yandex.ru/moscow/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 401,
@@ -114,6 +117,7 @@
 		{
 			"id": 5,
 			"name": "Самара",
+			"yandexEda": "https://eda.yandex.ru/samara/r/perchini_na_ogne",
 			"restaurants": [
 				{
 					"id": 501,
@@ -170,6 +174,7 @@
 		{
 			"id": 6,
 			"name": "Тюмень",
+			"yandexEda": "https://dostavka-perchini.ru/#/",
 			"restaurants": [
 				{
 					"id": 601,
@@ -208,6 +213,7 @@
 		{
 			"id": 7,
 			"name": "Воронеж",
+			"yandexEda": "https://eda.yandex.ru/voronezh/r/perchini_gexsw?placeSlug=perchini_26zk9",
 			"restaurants": [
 				{
 					"id": 701,
@@ -224,6 +230,7 @@
 		{
 			"id": 8,
 			"name": "Красноярск",
+			"yandexEda": "https://eda.yandex.ru/r/perchini_gexsw?placeSlug=perchini_nq36w",
 			"restaurants": [
 				{
 					"id": 801,
@@ -256,6 +263,7 @@
 		{
 			"id": 10,
 			"name": "Нижневартовск",
+			"yandexEda": "https://dostavka-perchini.ru/#/",
 			"restaurants": [
 				{
 					"id": 1001,
@@ -273,6 +281,7 @@
 		{
 			"id": 11,
 			"name": "Нижнекамск",
+			"yandexEda": "https://eda.yandex.ru/r/perchini_gexsw?placeSlug=perchini_vqplc",
 			"restaurants": [
 				{
 					"id": 1101,
@@ -290,6 +299,7 @@
 		{
 			"id": 12,
 			"name": "Новый Уренгой",
+			"yandexEda": "https://eda.yandex.ru/noviyurengoy/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 1201,
@@ -323,6 +333,7 @@
 		{
 			"id": 14,
 			"name": "Пермь",
+			"yandexEda": "https://eda.yandex.ru/perm/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 1401,
@@ -351,6 +362,7 @@
 		{
 			"id": 15,
 			"name": "Иркутск",
+			"yandexEda": "https://eda.yandex.ru/irkutsk/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 1501,
@@ -379,6 +391,7 @@
 		{
 			"id": 16,
 			"name": "Сургут",
+			"yandexEda": "https://dostavka-perchini.ru/#/",
 			"restaurants": [
 				{
 					"id": 1601,
@@ -395,6 +408,7 @@
 		{
 			"id": 17,
 			"name": "Томск",
+			"yandexEda": "https://eda.yandex.ru/r/perchini_gexsw?placeSlug=perchini_komsomolskij_prospekt_13b",
 			"restaurants": [
 				{
 					"id": 1701,
@@ -412,6 +426,7 @@
 		{
 			"id": 18,
 			"name": "Белгород",
+			"yandexEda": "https://eda.yandex.ru/belgorod/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 1801,
@@ -428,6 +443,7 @@
 		{
 			"id": 19,
 			"name": "Сочи",
+			"yandexEda": "https://eda.yandex.ru/sochi/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 1901,
@@ -444,6 +460,7 @@
 		{
 			"id": 20,
 			"name": "Ульяновск",
+			"yandexEda": "https://eda.yandex.ru/r/perchini_gexsw?placeSlug=perchini_58qnx",
 			"restaurants": [
 				{
 					"id": 2001,
@@ -460,6 +477,7 @@
 		{
 			"id": 21,
 			"name": "Уфа",
+			"yandexEda": "https://dostavka-perchini.ru/#/",
 			"restaurants": [
 				{
 					"id": 2101,
@@ -503,6 +521,7 @@
 		{
 			"id": 23,
 			"name": "Барнаул",
+			"yandexEda": "https://eda.yandex.ru/barnaul/r/perchini_gexsw",
 			"restaurants": [
 				{
 					"id": 2301,
@@ -519,6 +538,7 @@
 		{
 			"id": 24,
 			"name": "Екатеринбург",
+			"yandexEda": "https://eda.yandex.ru/r/perchini_gexsw?placeSlug=perchini_6k7ct",
 			"restaurants": [
 				{
 					"id": 2401,

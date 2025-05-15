@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
@@ -11,7 +10,6 @@ const RestaurantPage = () => {
 		.reduce((acc, city) => acc.concat(city.restaurants), [])
 		.find((restaurant) => restaurant.id === parseInt(restaurantId));
 
-	// Функция для отображения телефонов
 	const renderPhones = (phones) => {
 		let label = phones.length > 1 ? 'Телефоны для бронирования:' : 'Телефон для бронирования:';
 
