@@ -2,8 +2,10 @@ import { useParams } from 'react-router-dom';
 import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
 import styles from './CityPage.module.css';
+
 import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
+
 import YandexEdaLink from '../components/yandexEdaLink';
 
 const CityPage = () => {
