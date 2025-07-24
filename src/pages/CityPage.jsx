@@ -6,7 +6,7 @@ import styles from './CityPage.module.css';
 import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
 
-import YandexEdaLink from '../components/yandexEdaLink';
+import YandexEdaLink from '../components/YandexEdaLink';
 
 const CityPage = () => {
 	const { cityId } = useParams();
