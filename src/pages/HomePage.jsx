@@ -5,10 +5,13 @@ import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
 const HomePage = () => {
+
+	const API_URL = import.meta.env.REACT_APP_API_URL;
+
 	const [cities, setCities] = useState([]);
 
 	useEffect(() => {
-		fetch('http://localhost:1337/api/cities')
+		fetch('${API_URL}/api/cities')
 			.then((res) => res.json())
 			.then((data) => {
 				const citiesData = data?.data?.map((item) => ({
