@@ -11,7 +11,7 @@ const App = () => {
 	const [pageTitle, setPageTitle] = useState('');
 
 	useEffect(() => {
-		fetch('${API_URL}/api/global')
+		fetch(`${API_URL}/api/global`)
 			.then((res) => res.json())
 			.then((data) => {
 				const title = data?.data?.siteName;
@@ -27,7 +27,7 @@ const App = () => {
 	}, [pageTitle]);
 
   useEffect(() => {
-    fetch('${API_URL}/api/global?populate=favicon')
+    fetch(`${API_URL}/api/global?populate=favicon`)
       .then(res => res.json())
       .then(data => {
         const faviconUrl = data?.data?.favicon?.url;
