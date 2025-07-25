@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 const App = () => {
 
-	const API_URL = import.meta.env.VITE_API_URL;;
+	// const API_URL = import.meta.env.VITE_API_URL;
 
 	const [pageTitle, setPageTitle] = useState('');
 
@@ -27,7 +27,7 @@ const App = () => {
 	}, [pageTitle]);
 
   useEffect(() => {
-    fetch(`${API_URL}/api/global?populate=favicon`)
+    fetch(`https://willing-harmony-e53be7bef5.strapiapp.com/api/global?populate=favicon`)
       .then(res => res.json())
       .then(data => {
         const faviconUrl = data?.data?.favicon?.url;
