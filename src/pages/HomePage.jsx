@@ -11,7 +11,7 @@ const HomePage = () => {
 	const [cities, setCities] = useState([]);
 
 	useEffect(() => {
-		fetch(`${API_URL}/api/cities`)
+		fetch(`https://willing-harmony-e53be7bef5.strapiapp.com/api/cities`)
 			.then((res) => res.json())
 			.then((data) => {
 				const citiesData = data?.data?.map((item) => ({

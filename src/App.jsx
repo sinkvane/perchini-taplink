@@ -11,7 +11,7 @@ const App = () => {
 	const [pageTitle, setPageTitle] = useState('');
 
 	useEffect(() => {
-		fetch(`${API_URL}/api/global`)
+		fetch(`https://willing-harmony-e53be7bef5.strapiapp.com/api/global`)
 			.then((res) => res.json())
 			.then((data) => {
 				const title = data?.data?.siteName;
@@ -35,7 +35,7 @@ const App = () => {
         if (faviconUrl) {
           const fullUrl = faviconUrl.startsWith('http')
             ? faviconUrl
-            : `${API_URL}${faviconUrl}`;
+            : `https://willing-harmony-e53be7bef5.strapiapp.com${faviconUrl}`;
 
           let link = document.querySelector("link[rel~='icon']");
           if (!link) {
