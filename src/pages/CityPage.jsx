@@ -10,6 +10,8 @@ import PhoneIcon from '../components/PhoneIcon';
 import YandexEdaLink from '../components/YandexEdaLink';
 
 const CityPage = () => {
+	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+
 	const { cityId } = useParams();
 	const [cityName, setCityName] = useState('');
 	const [restaurants, setRestaurants] = useState([]);
@@ -18,7 +20,7 @@ const CityPage = () => {
 		const fetchCityWithRestaurants = async () => {
 			try {
 				const res = await axios.get(
-					`https://willing-harmony-e53be7bef5.strapiapp.com/api/cities?filters[factId]=${cityId}&populate[restaurants][populate]=PhoneNumber`
+					`${API_URL}/api/cities?filters[factId]=${cityId}&populate[restaurants][populate]=PhoneNumber`
 				);
 				const city = res?.data?.data?.[0];
 

@@ -7,22 +7,26 @@ import Header from '../components/Header';
 import axios from 'axios';
 
 const HomePage = () => {
+	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
 
 	const [cities, setCities] = useState([]);
 
 	useEffect(() => {
-		axios.get(`https://willing-harmony-e53be7bef5.strapiapp.com/api/cities`)
-			.then((res) => {
-				const citiesData = res.data?.data?.map((item) => ({
-					id: item.factId,
-					name: item.name,
-				}))
+		const getCities = async () => {
+			try {
+				const res = await axios.get(`${API_URL}/api/cities`);
+				const citiesData = res?.data?.data
+					?.map((item) => ({
+						id: item.factId,
+						name: item.name,
+					}))
 					.sort((a, b) => a.id - b.id);
 				setCities(citiesData);
-			})
-			.catch((err) => {
-				console.error('Ошибка при загрузке городов', err);
-			});
+			} catch (err) {
+				console.error('Ошибка загрузки городов:', err);
+			}
+		};
+		getCities();
 	}, []);
 
 	return (

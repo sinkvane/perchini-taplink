@@ -7,16 +7,21 @@ import Footer from './components/Footer';
 import axios from 'axios';
 
 const App = () => {
+	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+
 	const [pageTitle, setPageTitle] = useState('');
 
 	useEffect(() => {
-		axios
-			.get(`https://willing-harmony-e53be7bef5.strapiapp.com/api/global`)
-			.then((res) => {
+		const getTitle = async () => {
+			try {
+				const res = await axios.get(`${API_URL}/api/global`);
 				const title = res?.data?.data?.siteName;
 				if (title) setPageTitle(title);
-			})
-			.catch((err) => console.error('Ошибка при загрузке заголовка', err));
+			} catch (err) {
+				console.error('Ошибка при загрузке заголовка:', err);
+			}
+		};
+		getTitle();
 	}, []);
 
 	useEffect(() => {
@@ -26,15 +31,12 @@ const App = () => {
 	}, [pageTitle]);
 
 	useEffect(() => {
-		axios
-			.get(`https://willing-harmony-e53be7bef5.strapiapp.com/api/global?populate=favicon`)
-			.then((res) => {
-				const faviconUrl = res.data?.data?.favicon?.url;
-
+		const getFavicon = async () => {
+			try {
+				const res = await axios.get(`${API_URL}/api/global?populate=favicon`);
+				const faviconUrl = res?.data?.data?.favicon?.url;
 				if (faviconUrl) {
-					const fullUrl = faviconUrl.startsWith('http')
-						? faviconUrl
-						: `https://willing-harmony-e53be7bef5.strapiapp.com${faviconUrl}`;
+					const fullUrl = faviconUrl.startsWith('http') ? faviconUrl : `${API_URL}${faviconUrl}`;
 
 					let link = document.querySelector("link[rel~='icon']");
 					if (!link) {
@@ -44,8 +46,11 @@ const App = () => {
 					}
 					link.href = fullUrl;
 				}
-			})
-			.catch((err) => console.error('Ошибка при загрузке favicon:', err));
+			} catch (err) {
+				console.error('Ошибка загузки favicon:', err);
+			}
+		};
+		getFavicon();
 	}, []);
 
 	return (
