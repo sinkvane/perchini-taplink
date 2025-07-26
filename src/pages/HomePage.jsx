@@ -4,17 +4,16 @@ import styles from './HomePage.module.css';
 import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
-const HomePage = () => {
+import axios from 'axios';
 
-	// const API_URL = import.meta.env.VITE_API_URL;
+const HomePage = () => {
 
 	const [cities, setCities] = useState([]);
 
 	useEffect(() => {
-		fetch(`https://willing-harmony-e53be7bef5.strapiapp.com/api/cities`)
-			.then((res) => res.json())
-			.then((data) => {
-				const citiesData = data?.data?.map((item) => ({
+		axios.get(`https://willing-harmony-e53be7bef5.strapiapp.com/api/cities`)
+			.then((res) => {
+				const citiesData = res.data?.data?.map((item) => ({
 					id: item.factId,
 					name: item.name,
 				}))
