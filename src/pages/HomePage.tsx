@@ -1,26 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, FC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
+import { ICity, ICityApi } from '../types/city';
 
-const HomePage = () => {
+const HomePage: FC = () => {
 	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
 
-	const [cities, setCities] = useState([]);
+	const [cities, setCities] = useState<ICity[]>([]);
 
 	useEffect(() => {
-		const getCities = async () => {
+		const getCities = async ():Promise<void> => {
 			try {
-				const res = await axios.get(`${API_URL}/api/cities`);
-				const citiesData = res?.data?.data
-					?.map((item) => ({
+				const res:AxiosResponse<{data: ICityApi[]}> = await axios.get(`${API_URL}/api/cities`);
+				const citiesData:ICity[] = res?.data?.data
+					?.map((item: ICityApi) => ({
 						id: item.factId,
 						name: item.name,
 					}))
-					.sort((a, b) => a.id - b.id);
+					.sort((a:ICity, b:ICity) => a.id - b.id);
 				setCities(citiesData);
 			} catch (err) {
 				console.error('Ошибка загрузки городов:', err);

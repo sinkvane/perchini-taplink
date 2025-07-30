@@ -1,20 +1,27 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, FC } from 'react';
 import HomePage from './pages/HomePage';
 import CityPage from './pages/CityPage';
 import Footer from './components/Footer';
+import axios, { AxiosResponse } from 'axios';
 
-import axios from 'axios';
+type GlobalData = {
+	data: {
+		siteName?: string;
+		favicon?: {
+			url?: string;
+		};
+	};
+};
 
-const App = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
-
-	const [pageTitle, setPageTitle] = useState('');
+const App: FC = () => {
+	const API_URL: string = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const [pageTitle, setPageTitle] = useState<string>('');
 
 	useEffect(() => {
-		const getTitle = async () => {
+		const getTitle = async ():Promise<void> => {
 			try {
-				const res = await axios.get(`${API_URL}/api/global`);
+				const res:AxiosResponse<GlobalData> = await axios.get(`${API_URL}/api/global`);
 				const title = res?.data?.data?.siteName;
 				if (title) setPageTitle(title);
 			} catch (err) {
@@ -31,14 +38,14 @@ const App = () => {
 	}, [pageTitle]);
 
 	useEffect(() => {
-		const getFavicon = async () => {
+		const getFavicon = async ():Promise<void> => {
 			try {
-				const res = await axios.get(`${API_URL}/api/global?populate=favicon`);
+				const res:AxiosResponse<GlobalData> = await axios.get(`${API_URL}/api/global?populate=favicon`);
 				const faviconUrl = res?.data?.data?.favicon?.url;
 				if (faviconUrl) {
 					const fullUrl = faviconUrl.startsWith('http') ? faviconUrl : `${API_URL}${faviconUrl}`;
 
-					let link = document.querySelector("link[rel~='icon']");
+					let link: HTMLLinkElement | null = document.querySelector("link[rel~='icon']");
 					if (!link) {
 						link = document.createElement('link');
 						link.rel = 'icon';

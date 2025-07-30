@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import styles from '../pages/CityPage.module.css';
 import '../index.css';
 
-import DeliveryIcon from '../components/DeliveryIcon';
+import DeliveryIcon from './DeliveryIcon';
 
 const YandexEdaLink = () => {
 	const { cityId } = useParams(); // Это и есть factId
