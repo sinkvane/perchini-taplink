@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import axios from 'axios';
 
 const HomePage = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL = 'https://strapipro.ru';
 
 	const [cities, setCities] = useState([]);
 

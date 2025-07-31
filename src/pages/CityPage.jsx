@@ -10,7 +10,7 @@ import PhoneIcon from '../components/PhoneIcon';
 import YandexEdaLink from '../components/YandexEdaLink';
 
 const CityPage = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL = 'https://strapipro.ru';
 
 	const { cityId } = useParams();
 	const [cityName, setCityName] = useState('');

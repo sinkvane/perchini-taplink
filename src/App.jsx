@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import axios from 'axios';
 
 const App = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL = 'https://strapipro.ru';
 
 	const [pageTitle, setPageTitle] = useState('');
 
