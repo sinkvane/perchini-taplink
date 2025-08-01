@@ -464,9 +464,9 @@
 			"restaurants": [
 				{
 					"id": 2001,
-					"name": "Перчини Спасская, 8",
-					"address": "ТРЦ Prime Plaza, 5 этаж",
-					"phones": ["+7 (412) 39 88 08", "+7 (412) 39 88 09"],
+					"name": "Спасская, 8",
+					"address": "Спасская, 8",
+					"phones": ["+7 937 273-11-00"],
 					"menuUrl": "https://perchini.ru/view-menu.html?rest=69&menu=main",
 					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=69&menu=wom",
 					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],

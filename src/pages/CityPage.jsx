@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import data from '../data/restaurants.json';
 import BackButton from '../components/BackButton';
 import styles from './CityPage.module.css';
+import { Helmet } from 'react-helmet';
 
 import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
@@ -67,6 +68,15 @@ const CityPage = () => {
 
 	return (
 		<div className={styles.cityPageContainer}>
+			<Helmet>
+				<title>
+					{cityData.restaurants.length > 1 ? 'Рестораны' : 'Ресторан'} Перчини в городе {cityData.name}
+				</title>
+				<meta
+					name='description'
+					content={`${cityData.restaurants.length > 1 ? 'Рестораны' : 'Ресторан'} Перчини в городе ${cityData.name}`}
+				/>
+			</Helmet>
 			<div className={styles.cityPageHeader}>
 				<h1 className={styles.cityPageTitle}>{cityData.name}</h1>
 				<BackButton />
