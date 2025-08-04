@@ -1,6 +1,8 @@
-import React from 'react';
+type DeliveryIconProps = {
+  className: string
+}
 
-const DeliveryIcon = ({ className }) => (
+const DeliveryIcon = ({ className }:DeliveryIconProps) => (
   <svg
     version="1.1"
     id="Layer_1"
@@ -8,11 +10,11 @@ const DeliveryIcon = ({ className }) => (
     x="0px"
     y="0px"
     viewBox="0 0 32 32"
-    style={{ enableBackground: 'new 0 0 24 24', fill: 'none', stroke: '#e95b07', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: 10 }}
+    style={{ fill: 'none', stroke: '#e95b07', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: 10 }}
     xmlSpace="preserve"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       <path d="M6.5,13.5c-2.6-2.6-2.6-6.7,0-9.3l11.1,11.1l3.7,3.7l5.7,5.7c1,1,1,2.5,0,3.5l0,0c-1,1-2.8,1-3.7-0.2l-4.1-5.1 c-1-1.3-2.8-1.7-4.4-1.1l0,0L6.5,13.5z"/>
       <line x1="21.3" y1="12.1" x2="26.7" y2="6.7"/>

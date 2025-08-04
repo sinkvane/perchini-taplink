@@ -1,6 +1,8 @@
-import React from 'react';
+type PhoneIconProps = {
+	className: string;
+};
 
-const PhoneIcon = ({ className }) => (
+const PhoneIcon = ({ className }: PhoneIconProps) => (
 	<svg
 		version="1.1"
 		id="Capa_1"
@@ -9,8 +11,6 @@ const PhoneIcon = ({ className }) => (
 		className={className}
 		x="0px"
 		y="0px"
-		viewBox="0 0 473.806 473.806"
-		style={{ enableBackground: 'new 0 0 473.806 473.806' }}
 		xmlSpace="preserve"
 	>
 		<g>

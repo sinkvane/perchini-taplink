@@ -5,23 +5,23 @@ import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
 import axios, { AxiosResponse } from 'axios';
-import { ICity, ICityApi } from '../types/city';
+import { ICity } from '../types/city';
 
 const HomePage: FC = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL = 'https://strapipro.ru';
 
 	const [cities, setCities] = useState<ICity[]>([]);
 
 	useEffect(() => {
 		const getCities = async ():Promise<void> => {
 			try {
-				const res:AxiosResponse<{data: ICityApi[]}> = await axios.get(`${API_URL}/api/cities`);
+				const res:AxiosResponse<{data: ICity[]}> = await axios.get(`${API_URL}/api/cities`);
 				const citiesData:ICity[] = res?.data?.data
-					?.map((item: ICityApi) => ({
-						id: item.factId,
+					?.map((item: ICity) => ({
+						foreignId: item.foreignId,
 						name: item.name,
 					}))
-					.sort((a:ICity, b:ICity) => a.id - b.id);
+					.sort((a, b) => a.foreignId - b.foreignId);
 				setCities(citiesData);
 			} catch (err) {
 				console.error('Ошибка загрузки городов:', err);
@@ -40,8 +40,8 @@ const HomePage: FC = () => {
 				<h2 className={styles.homePageText}>Выберите город</h2>
 				{cities.map((city) => {
 					return (
-						<div key={city.id}>
-							<Link className={styles.homePageLink} to={`/city/${city.id}`}>
+						<div key={city.foreignId}>
+							<Link className={styles.homePageLink} to={`/city/${city.foreignId}`}>
 								<span>{city.name}</span>
 							</Link>
 						</div>

@@ -1,9 +1,7 @@
-export interface ICityApi {
-	name: string;
-	factId: number;
-}
+import { IRestaurant } from './restaurant';
 
 export interface ICity {
 	name: string;
-	id: number;
+	foreignId: number;
+	restaurants?: IRestaurant[];
 }

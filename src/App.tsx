@@ -15,7 +15,7 @@ type GlobalData = {
 };
 
 const App: FC = () => {
-	const API_URL: string = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL: string = 'https://strapipro.ru';
 	const [pageTitle, setPageTitle] = useState<string>('');
 
 	useEffect(() => {

@@ -3,26 +3,29 @@ import { useEffect, useState } from 'react';
 import BackButton from '../components/BackButton';
 import styles from './CityPage.module.css';
 
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 import LinkIcon from '../components/LinkIcon';
 import PhoneIcon from '../components/PhoneIcon';
 import YandexEdaLink from '../components/YandexEdaLink';
 
+import { ICity } from '../types/city';
+import { IRestaurant } from '../types/restaurant';
+
 const CityPage = () => {
-	const API_URL = 'https://willing-harmony-e53be7bef5.strapiapp.com';
+	const API_URL = 'https://strapipro.ru';
 
 	const { cityId } = useParams();
-	const [cityName, setCityName] = useState('');
-	const [restaurants, setRestaurants] = useState([]);
+	const [cityName, setCityName] = useState<string>('');
+	const [restaurants, setRestaurants] = useState<IRestaurant[]>([]);
 
 	useEffect(() => {
 		const fetchCityWithRestaurants = async () => {
 			try {
-				const res = await axios.get(
-					`${API_URL}/api/cities?filters[factId]=${cityId}&populate[restaurants][populate]=PhoneNumber`
+				const res:AxiosResponse<{data: ICity[]}> = await axios.get(
+					`${API_URL}/api/cities?filters[foreignId]=${cityId}&populate[restaurants][populate]=PhoneNumber`
 				);
-				const city = res?.data?.data?.[0];
+				const city:ICity | undefined = res?.data?.data?.[0];
 
 				if (!city) {
 					console.error('Город не найден');
@@ -30,7 +33,7 @@ const CityPage = () => {
 				}
 
 				setCityName(city.name);
-				setRestaurants(city.restaurants || city.attributes?.restaurants || []);
+				setRestaurants(city.restaurants || []);
 			} catch (error) {
 				console.error('Ошибка при загрузке города и ресторанов:', error);
 			}
@@ -54,14 +57,14 @@ const CityPage = () => {
 					<p>Адрес: {restaurant.address}</p>
 
 					{/* Телефоны */}
-					{restaurant.PhoneNumber && restaurant.PhoneNumber.length > 0 && (
+					{restaurant.phoneNumber && restaurant.phoneNumber.length > 0 && (
 						<>
 							<p>
-								{restaurant.PhoneNumber.length > 1
+								{restaurant.phoneNumber.length > 1
 									? 'Телефоны для ронирования:'
 									: 'Телефон для бронирования:'}
 							</p>
-							{restaurant.PhoneNumber.map((phoneObj) => (
+							{restaurant.phoneNumber.map((phoneObj) => (
 								<p key={phoneObj.id}>
 									<a className={styles.cityPagePhoneLink} href={`tel:${phoneObj.phones}`}>
 										{phoneObj.phones}
