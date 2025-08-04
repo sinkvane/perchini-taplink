@@ -7,20 +7,16 @@ import Header from '../components/Header';
 import axios, { AxiosResponse } from 'axios';
 import { ICity } from '../types/city';
 
-<<<<<<< HEAD:src/pages/HomePage.jsx
-const HomePage = () => {
-=======
 const HomePage: FC = () => {
->>>>>>> ts-added:src/pages/HomePage.tsx
 	const API_URL = 'https://strapipro.ru';
 
 	const [cities, setCities] = useState<ICity[]>([]);
 
 	useEffect(() => {
-		const getCities = async ():Promise<void> => {
+		const getCities = async (): Promise<void> => {
 			try {
-				const res:AxiosResponse<{data: ICity[]}> = await axios.get(`${API_URL}/api/cities`);
-				const citiesData:ICity[] = res?.data?.data
+				const res: AxiosResponse<{ data: ICity[] }> = await axios.get(`${API_URL}/api/cities`);
+				const citiesData: ICity[] = res?.data?.data
 					?.map((item: ICity) => ({
 						foreignId: item.foreignId,
 						name: item.name,

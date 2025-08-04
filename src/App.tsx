@@ -14,21 +14,14 @@ type GlobalData = {
 	};
 };
 
-<<<<<<< HEAD:src/App.jsx
-const App = () => {
-	const API_URL = 'https://strapipro.ru';
-
-	const [pageTitle, setPageTitle] = useState('');
-=======
 const App: FC = () => {
 	const API_URL: string = 'https://strapipro.ru';
 	const [pageTitle, setPageTitle] = useState<string>('');
->>>>>>> ts-added:src/App.tsx
 
 	useEffect(() => {
-		const getTitle = async ():Promise<void> => {
+		const getTitle = async (): Promise<void> => {
 			try {
-				const res:AxiosResponse<GlobalData> = await axios.get(`${API_URL}/api/global`);
+				const res: AxiosResponse<GlobalData> = await axios.get(`${API_URL}/api/global`);
 				const title = res?.data?.data?.siteName;
 				if (title) setPageTitle(title);
 			} catch (err) {
@@ -45,9 +38,11 @@ const App: FC = () => {
 	}, [pageTitle]);
 
 	useEffect(() => {
-		const getFavicon = async ():Promise<void> => {
+		const getFavicon = async (): Promise<void> => {
 			try {
-				const res:AxiosResponse<GlobalData> = await axios.get(`${API_URL}/api/global?populate=favicon`);
+				const res: AxiosResponse<GlobalData> = await axios.get(
+					`${API_URL}/api/global?populate=favicon`
+				);
 				const faviconUrl = res?.data?.data?.favicon?.url;
 				if (faviconUrl) {
 					const fullUrl = faviconUrl.startsWith('http') ? faviconUrl : `${API_URL}${faviconUrl}`;
