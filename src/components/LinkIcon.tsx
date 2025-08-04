@@ -1,6 +1,8 @@
-import React from 'react';
+type LinkIconProps = {
+  className: string
+}
 
-const LinkIcon = ({ className }) => (
+const LinkIcon = ({ className }:LinkIconProps) => (
 	<svg
 		version="1.1"
 		id="Layer_1"
@@ -10,7 +12,6 @@ const LinkIcon = ({ className }) => (
 		x="0px"
 		y="0px"
 		viewBox="0 0 122.6 122.88"
-		style={{ enableBackground: 'new 0 0 122.6 122.88' }}
 		xmlSpace="preserve"
 	>
 		<g>

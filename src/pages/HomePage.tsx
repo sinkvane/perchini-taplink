@@ -1,26 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, FC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
 
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
+import { ICity } from '../types/city';
 
+<<<<<<< HEAD:src/pages/HomePage.jsx
 const HomePage = () => {
+=======
+const HomePage: FC = () => {
+>>>>>>> ts-added:src/pages/HomePage.tsx
 	const API_URL = 'https://strapipro.ru';
 
-	const [cities, setCities] = useState([]);
+	const [cities, setCities] = useState<ICity[]>([]);
 
 	useEffect(() => {
-		const getCities = async () => {
+		const getCities = async ():Promise<void> => {
 			try {
-				const res = await axios.get(`${API_URL}/api/cities`);
-				const citiesData = res?.data?.data
-					?.map((item) => ({
-						id: item.factId,
+				const res:AxiosResponse<{data: ICity[]}> = await axios.get(`${API_URL}/api/cities`);
+				const citiesData:ICity[] = res?.data?.data
+					?.map((item: ICity) => ({
+						foreignId: item.foreignId,
 						name: item.name,
 					}))
-					.sort((a, b) => a.id - b.id);
+					.sort((a, b) => a.foreignId - b.foreignId);
 				setCities(citiesData);
 			} catch (err) {
 				console.error('Ошибка загрузки городов:', err);
@@ -39,8 +44,8 @@ const HomePage = () => {
 				<h2 className={styles.homePageText}>Выберите город</h2>
 				{cities.map((city) => {
 					return (
-						<div key={city.id}>
-							<Link className={styles.homePageLink} to={`/city/${city.id}`}>
+						<div key={city.foreignId}>
+							<Link className={styles.homePageLink} to={`/city/${city.foreignId}`}>
 								<span>{city.name}</span>
 							</Link>
 						</div>
