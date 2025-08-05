@@ -402,6 +402,16 @@
 					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=44&menu=wom",
 					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
 					"openHours": "ВС-ЧТ 10:00 — 23:00, ПТ-СБ 10:00 — 01:00"
+				},
+				{
+					"id": 1602,
+					"name": "Перчини на Центральном рынке",
+					"address": "ул. Островского, 14/1, Центральный рынок",
+					"phones": ["+7 (3462) 550-066"],
+					"menuUrl": "https://perchini.ru/view-menu.html?rest=93&menu=main",
+					"specialtyUrl": "https://perchini.ru/view-menu.html?rest=93&menu=wom",
+					"socialLinks": [{ "ВКонтакте": "vk.com/perchini_russia" }],
+					"openHours": "ВС-ЧТ 10:00 — 23:00 ПТ-СБ 10:00 — 01:00"
 				}
 			]
 		},
