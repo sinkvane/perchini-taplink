@@ -5,6 +5,7 @@ import CityPage from './pages/CityPage';
 import Footer from './components/Footer';
 import axios, { AxiosResponse } from 'axios';
 
+
 type GlobalData = {
 	data: {
 		siteName?: string;
