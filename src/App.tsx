@@ -3,6 +3,7 @@ import { useEffect, useState, FC } from 'react';
 import HomePage from './pages/HomePage';
 import CityPage from './pages/CityPage';
 import Footer from './components/Footer';
+import PageNotFound from './pages/NotFound';
 import axios, { AxiosResponse } from 'axios';
 
 type GlobalData = {
@@ -67,9 +68,9 @@ const App: FC = () => {
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/city/:cityId" element={<CityPage />} />
-				<Route path="*" element={<Navigate to="/" replace />} />
+				<Route path="*" element={<PageNotFound />} />
 			</Routes>
-			<Footer></Footer>
+			<Footer />
 		</Router>
 	);
 };

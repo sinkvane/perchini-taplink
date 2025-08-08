@@ -1,0 +1,53 @@
+.pageNotFoundContainer {
+	position: relative;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.pageNotFoundHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageNotFoundTitle {
+	text-align: center;
+	position: relative;
+	font-family: var(--fontFamilyTitle);
+  letter-spacing: var(--letterSpacingTitle);
+}
+
+.pageNotFoundNubmer {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	font-family: var(--fontFamilyTitle);
+	font-size: 100px;
+	letter-spacing: var(--letterSpacingTitle);
+
+	/* &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+    rotate: 45deg;
+    inset: 0 50%;
+    z-index: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+    rotate: 135deg;
+    inset: 0 50%;
+    z-index: -1;
+  } */
+}
