@@ -45,17 +45,19 @@ const CityPage = () => {
 
 	return (
 		<div className={styles.cityPageContainer}>
-			<Helmet>
-				<title>
-					{restaurants.length > 1 ? 'Рестораны' : 'Ресторан'} Перчини в городе {cityName}
-				</title>
-				<meta
-					name="description"
-					content={`${
-						restaurants.length > 1 ? 'Рестораны' : 'Ресторан'
-					} Перчини в городе ${cityName}`}
-				/>
-			</Helmet>
+			{cityName && (
+				<Helmet>
+					<title>
+						{restaurants.length > 1 ? 'Рестораны' : 'Ресторан'} Перчини в городе {cityName}
+					</title>
+					<meta
+						name="description"
+						content={`${
+							restaurants.length > 1 ? 'Рестораны' : 'Ресторан'
+						} Перчини в городе ${cityName}`}
+					/>
+				</Helmet>
+			)}
 			<div className={styles.cityPageHeader}>
 				<h1 className={styles.cityPageTitle}>{cityName}</h1>
 				<BackButton />

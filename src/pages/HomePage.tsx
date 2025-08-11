@@ -33,13 +33,15 @@ const HomePage: FC = () => {
 
 	return (
 		<div className={styles.homePageContainer}>
-			<Helmet>
-				<title>Выберите свой город - Перчини</title>
-				<meta
-					name="description"
-					content="Выберите город с рестораном Перчини. Перчини Итальянский Ресторан."
-				/>
-			</Helmet>
+			{cities.length > 0 && (
+				<Helmet>
+					<title>Выберите свой город - Перчини</title>
+					<meta
+						name="description"
+						content="Выберите город с рестораном Перчини. Перчини Итальянский Ресторан."
+					/>
+				</Helmet>
+			)}
 			<div className={styles.homePagePhotoContainer}>
 				<img src={perchiniMiniText} alt="В перчини есть!" />
 			</div>
