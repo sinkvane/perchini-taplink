@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, useState, FC } from 'react';
-import HomePage from './pages/HomePage';
-import CityPage from './pages/CityPage';
+import HomePage from './pages/HomePage.tsx';
+import CityPage from './pages/CityPage.tsx';
 import Footer from './components/Footer';
 import PageNotFound from './pages/NotFound';
 import axios, { AxiosResponse } from 'axios';

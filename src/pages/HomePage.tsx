@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import perchiniMiniText from '../assets/img/perchini_mini_text.png';
 import Header from '../components/Header';
+import { Helmet } from 'react-helmet';
 
 import axios, { AxiosResponse } from 'axios';
 import { ICity } from '../types/city';
@@ -32,6 +33,13 @@ const HomePage: FC = () => {
 
 	return (
 		<div className={styles.homePageContainer}>
+			<Helmet>
+				<title>Выберите свой город - Перчини</title>
+				<meta
+					name="description"
+					content="Выберите город с рестораном Перчини. Перчини Итальянский Ресторан."
+				/>
+			</Helmet>
 			<div className={styles.homePagePhotoContainer}>
 				<img src={perchiniMiniText} alt="В перчини есть!" />
 			</div>

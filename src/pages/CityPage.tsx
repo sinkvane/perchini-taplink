@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import BackButton from '../components/BackButton';
+import { Helmet } from 'react-helmet';
 import styles from './CityPage.module.css';
 
 import axios, { AxiosResponse } from 'axios';
@@ -22,10 +23,10 @@ const CityPage = () => {
 	useEffect(() => {
 		const fetchCityWithRestaurants = async () => {
 			try {
-				const res:AxiosResponse<{data: ICity[]}> = await axios.get(
+				const res: AxiosResponse<{ data: ICity[] }> = await axios.get(
 					`${API_URL}/api/cities?filters[foreignId]=${cityId}&populate[restaurants][populate]=PhoneNumber`
 				);
-				const city:ICity | undefined = res?.data?.data?.[0];
+				const city: ICity | undefined = res?.data?.data?.[0];
 
 				if (!city) {
 					console.error('Город не найден');
@@ -44,6 +45,17 @@ const CityPage = () => {
 
 	return (
 		<div className={styles.cityPageContainer}>
+			<Helmet>
+				<title>
+					{restaurants.length > 1 ? 'Рестораны' : 'Ресторан'} Перчини в городе {cityName}
+				</title>
+				<meta
+					name="description"
+					content={`${
+						restaurants.length > 1 ? 'Рестораны' : 'Ресторан'
+					} Перчини в городе ${cityName}`}
+				/>
+			</Helmet>
 			<div className={styles.cityPageHeader}>
 				<h1 className={styles.cityPageTitle}>{cityName}</h1>
 				<BackButton />
