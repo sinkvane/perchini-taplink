@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate, replace } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import BackButton from '../components/BackButton';
 import { Helmet } from 'react-helmet';
@@ -16,6 +16,8 @@ import { IRestaurant } from '../types/restaurant';
 const CityPage = () => {
 	const API_URL = 'https://strapipro.ru';
 
+	const navigate = useNavigate();
+
 	const { cityId } = useParams();
 	const [cityName, setCityName] = useState<string>('');
 	const [restaurants, setRestaurants] = useState<IRestaurant[]>([]);
@@ -29,7 +31,7 @@ const CityPage = () => {
 				const city: ICity | undefined = res?.data?.data?.[0];
 
 				if (!city) {
-					console.error('Город не найден');
+					navigate('/404', {replace: true})
 					return;
 				}
 
