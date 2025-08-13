@@ -6,7 +6,7 @@ export interface IRestaurant {
 	businessLunch?: string;
 	menuUrl?: string;
 	specialtyUrl?: string;
-	phoneNumber: IPhonesNumber[];
+	PhoneNumber: IPhonesNumber[];
 }
 
 export interface IPhonesNumber {

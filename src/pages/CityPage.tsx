@@ -73,7 +73,7 @@ const CityPage = () => {
 					<p>Адрес: {restaurant.address}</p>
 
 					{/* Телефоны */}
-					{restaurant.phoneNumber && restaurant.phoneNumber.length > 0 && (
+					{restaurant.phoneNumber && restaurant.PhoneNumber.length > 0 && (
 						<>
 							<p>
 								{restaurant.phoneNumber.length > 1
