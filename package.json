@@ -5,7 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && npx react-snap",
+		"build": "vite build",
+		"prerender": "npx react-snap",
+		"ci-build": "npm run build && npm run prerender",
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"typecheck": "tsc --noEmit"
