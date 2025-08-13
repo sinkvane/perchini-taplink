@@ -1,37 +1,45 @@
 name: Build and Deploy to Vercel
 
 on:
-    push:
-        branches:
-            - cms # твоя основная ветка
+  push:
+    branches:
+      - cms  # основная ветка с исходным кодом
 
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 20
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-            - name: Install dependencies
-              run: npm install
+      - name: Install dependencies
+        run: npm install
 
-            - name: Build and prerender
-              run: npm run ci-build
+      - name: Build and prerender
+        run: npm run ci-build
 
-            - name: Commit dist
-              run: |
-                  git config user.name "GitHub Actions Bot"
-                  git config user.email "actions@github.com"
-                  git checkout -B vercel-deploy
-                  git add -f dist
-                  git commit -m "Deploy prerendered site [skip ci]" || echo "No changes to commit"
-                  git push -f https://x-access-token:${{ secrets.GH_PAT }}@github.com/sinkvane/perchini-taplink.git vercel-deploy
+      - name: Commit dist and push to vercel-deploy
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }} # обязательно создай секрет с PAT
+        run: |
+          # Настройка identity для коммита
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
 
-              env:
-                  GH_PAT: ${{ secrets.GH_PAT }}
+          # Создаём или переключаемся на ветку vercel-deploy
+          git checkout -B vercel-deploy
+
+          # Добавляем папку dist (форсированно, чтобы игнор-файлы не мешали)
+          git add -f dist
+
+          # Коммитим изменения, если есть
+          git commit -m "Deploy prerendered site [skip ci]" || echo "No changes to commit"
+
+          # Пушим на GitHub через Personal Access Token
+          git push -f https://x-access-token:${GH_PAT}@github.com/sinkvane/perchini-taplink.git vercel-deploy
