@@ -3,7 +3,7 @@ name: Build and Deploy to Vercel
 on:
   push:
     branches:
-      - cms  # основная ветка с исходным кодом
+      - cms
 
 jobs:
   build-and-deploy:
@@ -25,21 +25,15 @@ jobs:
         run: npm run ci-build
 
       - name: Commit dist and push to vercel-deploy
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }} # обязательно создай секрет с PAT
         run: |
           # Настройка identity для коммита
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
 
-          # Создаём или переключаемся на ветку vercel-deploy
           git checkout -B vercel-deploy
 
-          # Добавляем папку dist (форсированно, чтобы игнор-файлы не мешали)
           git add -f dist
 
-          # Коммитим изменения, если есть
           git commit -m "Deploy prerendered site [skip ci]" || echo "No changes to commit"
 
-          # Пушим на GitHub через Personal Access Token
-          git push -f https://x-access-token:${GH_PAT}@github.com/sinkvane/perchini-taplink.git vercel-deploy
+          git push -f origin vercel-deploy
