@@ -31,6 +31,6 @@ jobs:
           git checkout -B vercel-deploy
           git add -f dist
           git commit -m "Deploy prerendered site [skip ci]" || echo "No changes to commit"
-          git push -f origin vercel-deploy
+          git push -f https://x-access-token:${GH_PAT}@github.com/sinkvane/perchini-taplink.git vercel-deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
