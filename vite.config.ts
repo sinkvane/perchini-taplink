@@ -5,7 +5,8 @@ export default defineConfig({
 	plugins: [react()],
 	base: '/', // Указываем базовый путь
 	build: {
-		outDir: 'dist', // Указываем директорию вывода сборки
+		outDir: 'dist',
+		target: 'es2019', // Указываем директорию вывода сборки
 		emptyOutDir: true, // Очищаем директорию перед сборкой
 		rollupOptions: {
 			input: {

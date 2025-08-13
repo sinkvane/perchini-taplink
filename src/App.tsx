@@ -17,6 +17,7 @@ type GlobalData = {
 
 const App: FC = () => {
 	const API_URL: string = 'https://strapipro.ru';
+
 	const [pageTitle, setPageTitle] = useState<string>('');
 
 	useEffect(() => {

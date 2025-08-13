@@ -14,7 +14,7 @@ import { ICity } from '../types/city';
 import { IRestaurant } from '../types/restaurant';
 
 const CityPage = () => {
-	const API_URL = 'https://strapipro.ru';
+	const API_URL: string = 'https://strapipro.ru';
 
 	const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ const CityPage = () => {
 				const city: ICity | undefined = res?.data?.data?.[0];
 
 				if (!city) {
-					navigate('/404', {replace: true})
+					navigate('/404', { replace: true });
 					return;
 				}
 

@@ -1,35 +1,72 @@
 {
-  "name": "package.json",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "axios": "^1.11.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^7.4.1",
-    "react-yandex-metrika": "^2.6.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "@typescript-eslint/parser": "^8.38.0",
-    "@vitejs/plugin-react-swc": "^3.8.0",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^15.15.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.2.0"
-  }
+	"name": "package.json",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && npx react-snap",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit"
+	},
+	"reactSnap": {
+		"source": "dist",
+		"inlineCss": true,
+		"puppeteerArgs": [
+			"--no-sandbox"
+		],
+		"include": [
+			"/",
+			"/city/1",
+			"/city/2",
+			"/city/3",
+			"/city/4",
+			"/city/5",
+			"/city/6",
+			"/city/7",
+			"/city/8",
+			"/city/9",
+			"/city/10",
+			"/city/11",
+			"/city/12",
+			"/city/13",
+			"/city/14",
+			"/city/15",
+			"/city/16",
+			"/city/17",
+			"/city/18",
+			"/city/19",
+			"/city/20",
+			"/city/21",
+			"/city/22",
+			"/city/23",
+			"/city/24",
+			"/city/25"
+		]
+	},
+	"dependencies": {
+		"axios": "^1.11.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-helmet": "^6.1.0",
+		"react-router-dom": "^7.4.1",
+		"react-yandex-metrika": "^2.6.0",
+		"serve": "^14.2.4"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.21.0",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"@typescript-eslint/eslint-plugin": "^8.38.0",
+		"@typescript-eslint/parser": "^8.38.0",
+		"@vitejs/plugin-react-swc": "^3.8.0",
+		"eslint": "^9.21.0",
+		"eslint-plugin-react-hooks": "^5.1.0",
+		"eslint-plugin-react-refresh": "^0.4.19",
+		"globals": "^15.15.0",
+		"react-snap": "^1.23.0",
+		"typescript": "^5.8.3",
+		"vite": "^6.2.0"
+	}
 }

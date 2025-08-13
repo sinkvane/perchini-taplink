@@ -9,7 +9,7 @@ import axios, { AxiosResponse } from 'axios';
 import { ICity } from '../types/city';
 
 const HomePage: FC = () => {
-	const API_URL = 'https://strapipro.ru';
+	const API_URL: string = 'https://strapipro.ru';
 
 	const [cities, setCities] = useState<ICity[]>([]);
 
