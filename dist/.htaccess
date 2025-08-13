@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Разрешить прямой доступ к статическим файлам
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.js$
+RewriteRule ^ index.html [QSA,L]
+
+# Убедиться, что сервер правильно определяет MIME-типы
+AddType application/javascript .js
