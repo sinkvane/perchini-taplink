@@ -9,6 +9,7 @@ const PhoneIcon = ({ className }: PhoneIconProps) => (
 		xmlns="http://www.w3.org/2000/svg"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
 		className={className}
+		viewBox="0 0 512 512"
 		x="0px"
 		y="0px"
 		xmlSpace="preserve"

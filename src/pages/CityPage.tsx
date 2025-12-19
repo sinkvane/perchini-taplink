@@ -73,14 +73,14 @@ const CityPage = () => {
 					<p>Адрес: {restaurant.address}</p>
 
 					{/* Телефоны */}
-					{restaurant.phoneNumber && restaurant.phoneNumber.length > 0 && (
+					{restaurant.PhoneNumber && restaurant.PhoneNumber.length > 0 && (
 						<>
 							<p>
-								{restaurant.phoneNumber.length > 1
+								{restaurant.PhoneNumber.length > 1
 									? 'Телефоны для ронирования:'
 									: 'Телефон для бронирования:'}
 							</p>
-							{restaurant.phoneNumber.map((phoneObj) => (
+							{restaurant.PhoneNumber.map((phoneObj) => (
 								<p key={phoneObj.id}>
 									<a className={styles.cityPagePhoneLink} href={`tel:${phoneObj.phones}`}>
 										{phoneObj.phones}
